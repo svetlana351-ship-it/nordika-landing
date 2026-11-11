@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NORDIKA — дизайн интерьера в скандинавском стиле | Студия скандинавских интерьеров</title>
+  <meta name="description" content="Светлый минимализм, натуральные материалы и продуманная планировка для квартир и загородных домов. Дизайн-проект под ключ от 4 500 ₽/м². Расчёт стоимости за 1 день.">
+  <meta property="og:title" content="NORDIKA — дизайн интерьера в скандинавском стиле">
+  <meta property="og:description" content="Светлый минимализм, натуральные материалы и продуманная планировка. Расчёт стоимости вашего проекта за 1 день.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/hero.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="NORDIKA — на главную">NORDIKA</a>
+      <nav class="nav" aria-label="Основное меню">
+        <a href="#about">О студии</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#team">Команда</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header__contacts">
+        <a class="header__phone" href="tel:+74951204567">+7 (495) 120-45-67</a>
+        <button class="btn btn--primary btn--header" type="button" data-open-lead>Консультация</button>
+      </div>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Мобильное меню -->
+  <div class="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Мобильное меню">
+      <a href="#about">О студии</a>
+      <a href="#services">Услуги</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#team">Команда</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="mobile-menu__phone" href="tel:+74951204567">+7 (495) 120-45-67</a>
+    <button class="btn btn--primary" type="button" data-open-lead>Консультация</button>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero__img" src="/assets/hero.jpg" alt="Светлая гостиная в скандинавском стиле: серый диван, дубовый пол, большие окна" width="2560" height="1088">
+      <div class="container hero__content">
+        <div class="hero__plate">
+          <h1>Дизайн интерьера в&nbsp;скандинавском стиле</h1>
+          <p class="hero__lead">Светлый минимализм, натуральные материалы и&nbsp;продуманная планировка для квартир и&nbsp;загородных домов</p>
+          <div class="hero__actions">
+            <button class="btn btn--primary" type="button" data-open-lead>Получить дизайн-проект</button>
+            <a class="btn btn--secondary" href="#portfolio">Смотреть портфолио</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О СТУДИИ -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2>О студии</h2>
+        <div class="about__grid">
+          <img class="frame about__photo-main" src="/assets/about-1.jpg" alt="Уютная светлая гостиная: серый диван, жёлтые пуфы, деревянный стеллаж" width="1216" height="912" loading="lazy">
+          <div class="about__text">
+            <p class="lead">Ваш дом — наша страсть, скандинавский стиль — наша философия.</p>
+            <p>Мы — команда дизайнеров, влюблённых в&nbsp;создание светлых, функциональных и&nbsp;невероятно уютных пространств. Мы используем натуральные материалы и&nbsp;продумываем каждую деталь, чтобы ваш дом стал вашим личным оазисом.</p>
+            <p>Позвольте нам превратить вашу квартиру или дом в&nbsp;идеальное скандинавское пространство, где каждая минута будет приносить радость. Свяжитесь с&nbsp;нами сегодня, и&nbsp;давайте начнём создавать ваш дом мечты!</p>
+          </div>
+          <div class="about__photos">
+            <img class="frame" src="/assets/about-2.jpg" alt="Рабочее место дизайнера: образцы материалов и планы на дубовом столе" width="1216" height="912" loading="lazy">
+            <img class="frame" src="/assets/service-3.jpg" alt="Обеденный уголок: лёгкий деревянный стол и бумажная лампа" width="1024" height="768" loading="lazy">
+          </div>
+        </div>
+        <ul class="counters" aria-label="Ключевые цифры студии">
+          <li class="counter"><span class="counter__num">+240</span><span class="counter__label">проектов завершено</span></li>
+          <li class="counter"><span class="counter__num">12</span><span class="counter__label">лет на рынке</span></li>
+          <li class="counter"><span class="counter__num">96%</span><span class="counter__label">клиентов рекомендуют нас</span></li>
+          <li class="counter"><span class="counter__num">18</span><span class="counter__label">специалистов в команде</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ПОДХОД -->
+    <section class="section">
+      <div class="container">
+        <h2>Наш подход к&nbsp;скандинавскому интерьеру</h2>
+        <div class="cards-3">
+          <article class="card">
+            <img class="frame" src="/assets/approach-1.jpg" alt="Натуральные материалы: доска из дуба, лён и шерсть" width="1024" height="768" loading="lazy">
+            <h3>Натуральные материалы</h3>
+            <p>Дуб и&nbsp;ясень, лён, шерсть, керамика. Никакого «пластика под дерево» — только то, что приятно трогать и&nbsp;что становится только лучше с&nbsp;годами.</p>
+          </article>
+          <article class="card">
+            <img class="frame" src="/assets/approach-2.jpg" alt="Светлая комната, залитая дневным светом" width="1024" height="768" loading="lazy">
+            <h3>Свет и&nbsp;воздух</h3>
+            <p>Светлая палитра, чистые линии, минимум лишнего. Пространство дышит, а&nbsp;вы — отдыхаете, даже находясь посреди будней.</p>
+          </article>
+          <article class="card">
+            <img class="frame" src="/assets/approach-3.jpg" alt="Планировочные планы и интерьерные эскизы на столе" width="1024" height="768" loading="lazy">
+            <h3>Продуманная планировка</h3>
+            <p>Каждый метр работает на&nbsp;вас: встроенное хранение до&nbsp;потолка, удобные маршруты, зоны для жизни, работы и&nbsp;тихого уединения.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2>Услуги и&nbsp;пакеты для&nbsp;вашего проекта</h2>
+        <div class="packages-slider">
+          <div class="packages-slider__viewport">
+            <div class="packages-slider__track">
+              <article class="pkg-card" data-package="basic">
+                <div class="pkg-card__media">
+                  <img class="frame" src="/assets/service-1.jpg" alt="Минималистичная спальня: белое постельное бельё и деревянное изголовье" width="1024" height="768" loading="lazy">
+                  <div class="pkg-card__media-row">
+                    <img class="frame" src="/assets/about-2.jpg" alt="Образцы материалов и планы на столе дизайнера" width="1024" height="768" loading="lazy">
+                    <img class="frame" src="/assets/approach-1.jpg" alt="Натуральные материалы: доска из дуба, лён и шерсть" width="1024" height="768" loading="lazy">
+                  </div>
+                </div>
+                <div class="pkg-card__body">
+                  <h3>Базовый дизайн-проект</h3>
+                  <p class="pkg-card__subtitle">Что включено</p>
+                  <ul class="checklist">
+                    <li>Концепт-дизайн</li>
+                    <li>Планировка</li>
+                    <li>3D-визуализации</li>
+                    <li>Чертежи</li>
+                    <li>Планы расстановки</li>
+                  </ul>
+                  <p class="pkg-card__price">Примерная цена: от&nbsp;50&nbsp;000&nbsp;₽</p>
+                  <button class="pkg-card__more" type="button" data-open-package="basic">Подробнее&nbsp;→</button>
+                  <button class="btn btn--primary" type="button" data-open-lead>Получить персональное предложение</button>
+                </div>
+              </article>
+              <article class="pkg-card pkg-card--rev" data-package="full">
+                <div class="pkg-card__media">
+                  <img class="frame" src="/assets/service-4.jpg" alt="Интерьер загородного дома с деревянными балками и камином" width="1024" height="768" loading="lazy">
+                  <div class="pkg-card__media-row">
+                    <img class="frame" src="/assets/service-2.jpg" alt="Скандинавская кухня: белые шкафы и деревянная столешница" width="1024" height="768" loading="lazy">
+                    <img class="frame" src="/assets/final.jpg" alt="Светлая прихожая с деревянной скамьёй и зеркалом" width="1024" height="768" loading="lazy">
+                  </div>
+                </div>
+                <div class="pkg-card__body">
+                  <h3>Полный дизайн-проект (под&nbsp;ключ)</h3>
+                  <p class="pkg-card__subtitle">Что включено</p>
+                  <ul class="checklist">
+                    <li>3D-визуализация</li>
+                    <li>Планировочные решения</li>
+                    <li>Подбор поставщиков</li>
+                    <li>План работ</li>
+                    <li>Концепт + подбор материалов</li>
+                  </ul>
+                  <p class="pkg-card__price">Примерная цена: от&nbsp;70&nbsp;000&nbsp;₽</p>
+                  <button class="pkg-card__more" type="button" data-open-package="full">Подробнее&nbsp;→</button>
+                  <button class="btn btn--primary" type="button" data-open-lead>Получить персональное предложение</button>
+                </div>
+              </article>
+              <article class="pkg-card" data-package="moodboard">
+                <div class="pkg-card__media">
+                  <img class="frame" src="/assets/approach-3.jpg" alt="Планировочные планы и интерьерные эскизы на столе" width="1024" height="768" loading="lazy">
+                  <div class="pkg-card__media-row">
+                    <img class="frame" src="/assets/approach-1.jpg" alt="Натуральные материалы и фактуры для интерьера" width="1024" height="768" loading="lazy">
+                    <img class="frame" src="/assets/about-2.jpg" alt="Образцы текстиля и материалов в интерьерной студии" width="1024" height="768" loading="lazy">
+                  </div>
+                </div>
+                <div class="pkg-card__body">
+                  <h3>Moodboard и&nbsp;концепт-дизайн</h3>
+                  <p class="pkg-card__subtitle">Что включено</p>
+                  <ul class="checklist">
+                    <li>Moodboard интерьера</li>
+                    <li>Образцы материалов</li>
+                    <li>Палитра</li>
+                    <li>Стилистика и референсы</li>
+                    <li>Рекомендации по декору</li>
+                  </ul>
+                  <p class="pkg-card__price">Примерная цена: от&nbsp;15&nbsp;000&nbsp;₽</p>
+                  <button class="pkg-card__more" type="button" data-open-package="moodboard">Подробнее&nbsp;→</button>
+                  <button class="btn btn--primary" type="button" data-open-lead>Получить moodboard</button>
+                </div>
+              </article>
+              <article class="pkg-card pkg-card--rev" data-package="3d">
+                <div class="pkg-card__media">
+                  <img class="frame" src="/assets/approach-2.jpg" alt="Светлая комната, залитая дневным светом" width="1024" height="768" loading="lazy">
+                  <div class="pkg-card__media-row">
+                    <img class="frame" src="/assets/service-1.jpg" alt="Светлая спальня с натуральными материалами" width="1024" height="768" loading="lazy">
+                    <img class="frame" src="/assets/case-after.jpg" alt="Светлая комната после ремонта: уютная мебель и растения" width="1024" height="768" loading="lazy">
+                  </div>
+                </div>
+                <div class="pkg-card__body">
+                  <h3>3D визуализация</h3>
+                  <p class="pkg-card__subtitle">Что включено</p>
+                  <ul class="checklist">
+                    <li>Концепция по вашим референсам</li>
+                    <li>Подбор материалов и мебели</li>
+                    <li>Фотореалистичные рендеры</li>
+                    <li>2 итерации правок</li>
+                    <li>Исходники в высоком разрешении</li>
+                  </ul>
+                  <p class="pkg-card__price">Примерная цена: от&nbsp;10&nbsp;000&nbsp;₽</p>
+                  <button class="pkg-card__more" type="button" data-open-package="3d">Подробнее&nbsp;→</button>
+                  <button class="btn btn--primary" type="button" data-open-lead>Получить 3D визуализацию</button>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="packages-slider__controls">
+            <button class="packages-slider__arrow packages-slider__arrow--prev" type="button" aria-label="Предыдущий пакет">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+            </button>
+            <div class="packages-slider__dots" role="tablist" aria-label="Пакеты"></div>
+            <button class="packages-slider__arrow packages-slider__arrow--next" type="button" aria-label="Следующий пакет">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАК МЫ РАБОТАЕМ -->
+    <section class="section">
+      <div class="container">
+        <h2>Как мы реализуем ваш проект</h2>
+        <ol class="timeline">
+          <li class="timeline__step"><span class="timeline__num">1</span><p>Заявка и&nbsp;брифинг</p><p class="timeline__sub">Уточняем цели, стиль, бюджет</p></li>
+          <li class="timeline__step"><span class="timeline__num">2</span><p>Планировочное решение</p><p class="timeline__sub">Планы расстановки, ведомости материалов</p></li>
+          <li class="timeline__step"><span class="timeline__num">3</span><p>3D-визуализация</p><p class="timeline__sub">Видим будущий интерьер до старта работ</p></li>
+          <li class="timeline__step"><span class="timeline__num">4</span><p>Чертежи и&nbsp;спецификации</p><p class="timeline__sub">Разработка рабочей документации</p></li>
+          <li class="timeline__step"><span class="timeline__num">5</span><p>Комплектация</p><p class="timeline__sub">Подбираем мебель и материалы, ведём закупки</p></li>
+          <li class="timeline__step"><span class="timeline__num">6</span><p>Контроль реализации</p><p class="timeline__sub">Авторский надзор за отделочными работами</p></li>
+        </ol>
+        <div class="section__cta">
+          <p>Прозрачность на&nbsp;каждом этапе — от&nbsp;первой планировки до&nbsp;приёмки объекта.</p>
+          <button class="btn btn--primary" type="button" data-open-lead>Начать с консультации</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ПОРТФОЛИО -->
+    <section class="supervision">
+      <div class="container supervision__inner">
+        <svg class="supervision__icon" width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M4 44h40M8 44V20l16-12 16 12v24" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+          <path d="M18 44V30h12v14" stroke="currentColor" stroke-width="2" stroke-linecap="square"/>
+        </svg>
+        <div class="supervision__text">
+          <p class="supervision__title">Авторский надзор на&nbsp;всем протяжении проекта</p>
+          <p class="supervision__sub">Контроль за&nbsp;проведением отделочных работ в&nbsp;соответствии с&nbsp;дизайн-проектом</p>
+        </div>
+        <button class="btn btn--primary" type="button" data-open-lead>Записаться на&nbsp;бесплатную консультацию</button>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <h2>Наше портфолио</h2>
+        <div class="h-slider" data-slider>
+          <div class="h-slider__viewport">
+            <div class="h-slider__track portfolio__track">
+          <article class="project-card">
+            <img class="frame" src="/assets/proj-68.jpg" alt="Светлая кухня-гостиная в квартире для молодой семьи" width="1200" height="896" loading="lazy">
+            <h3>Квартира для молодой семьи, 68&nbsp;м²</h3>
+            <p>Современный, светлые тона. Кухня-гостиная, изолированная детская, вместительное хранение без перепланировки.</p>
+            <p class="project-card__budget">Бюджет: 4 800 000 ₽</p>
+            <div class="project-card__actions">
+              <button class="btn btn--primary btn--small" type="button" data-project="68">Посмотреть кейс</button>
+              <button class="btn btn--secondary btn--small" type="button" data-open-lead>Хочу так же</button>
+            </div>
+          </article>
+          <article class="project-card">
+            <img class="frame" src="/assets/proj-30.jpg" alt="Компактная студия с откидной кроватью и встроенными шкафами" width="1200" height="896" loading="lazy">
+            <h3>Студия для сдачи в&nbsp;аренду, 30&nbsp;м²</h3>
+            <p>Скандинавский минимализм. Трансформируемая мебель, влагостойкие материалы, максимум функции на минимуме метров.</p>
+            <p class="project-card__budget">Бюджет: 1 900 000 ₽</p>
+            <div class="project-card__actions">
+              <button class="btn btn--primary btn--small" type="button" data-project="30">Посмотреть кейс</button>
+              <button class="btn btn--secondary btn--small" type="button" data-open-lead>Хочу так же</button>
+            </div>
+          </article>
+          <article class="project-card">
+            <img class="frame" src="/assets/proj-140.jpg" alt="Просторная гостиная загородного дома с высокими окнами" width="1200" height="896" loading="lazy">
+            <h3>Загородный дом для семьи с&nbsp;детьми, 140&nbsp;м²</h3>
+            <p>Скандинавский с&nbsp;элементами хюгге. Открытая планировка первого этажа, игровая зона, безопасные материалы.</p>
+            <p class="project-card__budget">Бюджет: 12 500 000 ₽</p>
+            <div class="project-card__actions">
+              <button class="btn btn--primary btn--small" type="button" data-project="140">Посмотреть кейс</button>
+              <button class="btn btn--secondary btn--small" type="button" data-open-lead>Хочу так же</button>
+            </div>
+          </article>
+          <article class="project-card">
+            <img class="frame" src="/assets/proj-45.jpg" alt="Обновлённая однушка со стеклянной перегородкой спальни" width="1200" height="896" loading="lazy">
+            <h3>Квартира для молодой пары, 45&nbsp;м²</h3>
+            <p>Скандинавский минимализм. Изолированная спальня за стеклянной перегородкой, рабочее место у окна, +40% хранения.</p>
+            <p class="project-card__budget">Бюджет: 3 100 000 ₽</p>
+            <div class="project-card__actions">
+              <button class="btn btn--primary btn--small" type="button" data-project="45">Посмотреть кейс</button>
+              <button class="btn btn--secondary btn--small" type="button" data-open-lead>Хочу так же</button>
+            </div>
+          </article>
+            </div>
+          </div>
+          <div class="h-slider__controls">
+            <button class="h-slider__arrow h-slider__arrow--prev" type="button" aria-label="Предыдущий проект">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+            </button>
+            <div class="h-slider__dots" role="tablist" aria-label="Проекты"></div>
+            <button class="h-slider__arrow h-slider__arrow--next" type="button" aria-label="Следующий проект">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- КЕЙС МЕСЯЦА -->
+    <section class="section">
+      <div class="container">
+        <h2>Кейс месяца</h2>
+        <h3 class="case__title">Скандинавский интерьер, который дышит</h3>
+        <div class="case__grid">
+          <figure class="case__photo">
+            <img class="frame" src="/assets/case-before.jpg" alt="Комната квартиры до ремонта: пустая, с изношенными стенами" width="1200" height="896" loading="lazy">
+            <figcaption>До</figcaption>
+          </figure>
+          <figure class="case__photo">
+            <img class="frame" src="/assets/case-after.jpg" alt="Та же комната после ремонта: светлая отделка и уютная мебель" width="1200" height="896" loading="lazy">
+            <figcaption>После</figcaption>
+          </figure>
+          <div class="case__info">
+            <dl class="case__facts">
+              <div><dt>Площадь</dt><dd>68&nbsp;м²</dd></div>
+              <div><dt>Срок</dt><dd>4&nbsp;месяца</dd></div>
+              <div><dt>Бюджет</dt><dd>4 800 000&nbsp;₽</dd></div>
+              <div><dt>Стиль</dt><dd>Современный, светлые тона</dd></div>
+            </dl>
+            <div class="case__block">
+              <h4>Задача</h4>
+              <p>Создать светлое пространство с&nbsp;большой кухней-гостиной, изолированной детской и&nbsp;вместительным хранением без&nbsp;перепланировки.</p>
+            </div>
+            <div class="case__block">
+              <h4>Решение</h4>
+              <p>Объединили кухню и&nbsp;гостиную, перенесли зону ТВ для&nbsp;лучшего освещения, спроектировали встроенные шкафы до&nbsp;потолка.</p>
+            </div>
+            <div class="case__block case__block--result">
+              <h4>Результат</h4>
+              <p>+10&nbsp;м² полезного хранения, заказчик получил понятную документацию для&nbsp;строителей, количество правок сократилось на&nbsp;30%.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section class="section">
+      <div class="container">
+        <h2>Реальные истории наших клиентов</h2>
+        <p class="section__lead">Каждый проект — это чья-то жизнь, ставшая светлее и&nbsp;удобнее.</p>
+        <div class="h-slider" data-slider>
+          <div class="h-slider__viewport">
+            <div class="h-slider__track reviews__track">
+          <blockquote class="review">
+            <img class="frame" src="/assets/review-1.jpg" alt="Спокойная светлая спальня в скандинавском стиле" width="1024" height="768" loading="lazy">
+            <p>«Боялась, что светлый интерьер будет «больничным». Получилось наоборот — дома стало тепло и&nbsp;тихо. Хранение придумали там, где я&nbsp;и&nbsp;не&nbsp;подозревала».</p>
+            <footer>Марина и&nbsp;Алексей — квартира 68&nbsp;м², Москва</footer>
+          </blockquote>
+          <blockquote class="review">
+            <img class="frame" src="/assets/review-2.jpg" alt="Скандинавская кухня с обеденным столом" width="1024" height="768" loading="lazy">
+            <p>«Сдавали студию в&nbsp;аренду — окупилась за&nbsp;14&nbsp;месяцев. Ни&nbsp;одной простой с&nbsp;момента заселения, наниматели возвращаются снова».</p>
+            <footer>Денис — студия 30&nbsp;м², Санкт-Петербург</footer>
+          </blockquote>
+          <blockquote class="review">
+            <img class="frame" src="/assets/review-3.jpg" alt="Гостиная с зелёными растениями и деревянной мебелью" width="1024" height="768" loading="lazy">
+            <p>«С&nbsp;двумя детьми и&nbsp;собакой боялись белых диванов. Полгода живём — всё отстирывается, ничего не&nbsp;поцарапалось, а&nbsp;дом выглядит как с&nbsp;картинки».</p>
+            <footer>Семья Ларионовых — дом 140&nbsp;м², Новая Рига</footer>
+          </blockquote>
+          <blockquote class="review">
+            <img class="frame" src="/assets/review-4.jpg" alt="Светлая гостиная с белым диваном и зелёными растениями" width="1024" height="768" loading="lazy">
+            <p>«Для нас главным было уложиться в&nbsp;бюджет и&nbsp;при этом не&nbsp;потерять стиль. Получилось и&nbsp;двум детям удобно, и&nbsp;нам красиво — дом собирает комплименты».</p>
+            <footer>Ольга и&nbsp;Максим — трёхкомнатная квартира 82&nbsp;м², Химки</footer>
+          </blockquote>
+            </div>
+          </div>
+          <div class="h-slider__controls">
+            <button class="h-slider__arrow h-slider__arrow--prev" type="button" aria-label="Предыдущий отзыв">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+            </button>
+            <div class="h-slider__dots" role="tablist" aria-label="Отзывы"></div>
+            <button class="h-slider__arrow h-slider__arrow--next" type="button" aria-label="Следующий отзыв">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="section__cta">
+          <p>Хотите так же? Расскажем, каким будет ваш проект.</p>
+          <button class="btn btn--primary" type="button" data-open-lead>Хочу так же</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФОРМА РАСЧЁТА -->
+    <section class="section" id="lead">
+      <div class="container">
+        <h2>Рассчитаем стоимость вашего проекта за&nbsp;1&nbsp;день</h2>
+        <div class="lead__grid">
+          <form class="form" id="lead-form" novalidate>
+            <div class="form__row">
+              <label class="form__field">
+                <span class="form__label">Ваше имя</span>
+                <input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться" required>
+                <span class="form__error" aria-live="polite"></span>
+              </label>
+              <label class="form__field">
+                <span class="form__label">Телефон</span>
+                <input type="tel" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+                <span class="form__error" aria-live="polite"></span>
+              </label>
+            </div>
+            <label class="form__field">
+              <span class="form__label">Тип объекта</span>
+              <select name="type" required>
+                <option value="" selected disabled>Выберите вариант</option>
+                <option>Квартира</option>
+                <option>Загородный дом</option>
+                <option>Коммерческое помещение</option>
+              </select>
+              <span class="form__error" aria-live="polite"></span>
+            </label>
+            <label class="form__field">
+              <span class="form__label">Комментарий <span class="form__opt">(не&nbsp;обязательно)</span></span>
+              <textarea name="comment" rows="3" placeholder="Площадь, пожелания, сроки"></textarea>
+            </label>
+            <button class="btn btn--primary form__submit" type="submit">Получить расчёт</button>
+            <p class="form__note">Перезвоним за&nbsp;1&nbsp;час в&nbsp;рабочее время. Демонстрационный режим: данные формы никуда не&nbsp;отправляются.</p>
+          </form>
+          <aside class="lead__aside">
+            <h3>Что вы получите уже на&nbsp;этапе заявки</h3>
+            <ul class="checklist">
+              <li>Предварительную смету под&nbsp;ваш метраж</li>
+              <li>Рекомендации по&nbsp;планировке</li>
+              <li>3–4 референс-проекта похожих объектов</li>
+              <li>Расчёт двух вариантов бюджета — базового и&nbsp;оптимального</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- КОМАНДА -->
+    <section class="section" id="team">
+      <div class="container">
+        <h2>Кто создаёт ваш идеальный интерьер</h2>
+        <p class="section__sub">Команда, увлечённая скандинавским дизайном и&nbsp;спокойным сервисом</p>
+        <div class="team__list">
+          <article class="member">
+            <img class="frame" src="/assets/team-1.jpg" alt="Анна Северина, руководитель и основатель студии" width="832" height="1120" loading="lazy">
+            <div class="member__info">
+              <h3>Анна Северина</h3>
+              <p class="member__role">Основатель, руководитель студии</p>
+              <p class="member__exp">12 лет опыта · 240+ проектов</p>
+              <p>Отвечает за&nbsp;концепцию и&nbsp;результат каждого проекта. Лично ведёт сложные объекты и&nbsp;авторский надзор.</p>
+            </div>
+          </article>
+          <article class="member member--rev">
+            <img class="frame" src="/assets/team-2.jpg" alt="Дмитрий Волков, ведущий архитектор" width="832" height="1120" loading="lazy">
+            <div class="member__info">
+              <h3>Дмитрий Волков</h3>
+              <p class="member__role">Ведущий архитектор</p>
+              <p class="member__exp">9 лет опыта</p>
+              <p>Планировочные решения и&nbsp;рабочая документация. Специализация — сложные перепланировки и&nbsp;загородные дома.</p>
+            </div>
+          </article>
+          <article class="member">
+            <img class="frame" src="/assets/team-3.jpg" alt="Ольга Берг, менеджер проектов" width="832" height="1120" loading="lazy">
+            <div class="member__info">
+              <h3>Ольга Берг</h3>
+              <p class="member__role">Менеджер проектов</p>
+              <p class="member__exp">7 лет опыта</p>
+              <p>Держит сроки, бюджет и&nbsp;коммуникацию: еженедельные отчёты, график поставок, вопросы строителей — всё через неё.</p>
+            </div>
+          </article>
+          <article class="member member--rev">
+            <img class="frame" src="/assets/team-4.jpg" alt="Сергей Хольм, инженер-строитель" width="832" height="1120" loading="lazy">
+            <div class="member__info">
+              <h3>Сергей Хольм</h3>
+              <p class="member__role">Инженер-строитель</p>
+              <p class="member__exp">15 лет опыта</p>
+              <p>Проверяет узлы и&nbsp;решения до&nbsp;того, как они попадут на&nbsp;объект. Отвечает за&nbsp;то, чтобы проект работал в&nbsp;жизни, а&nbsp;не&nbsp;только на&nbsp;картинках.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA-ПОЛОСА -->
+    <section class="cta-band">
+      <div class="container cta-band__inner">
+        <h2>Нравится наш подход?</h2>
+        <p>Бесплатная консультация — 30&nbsp;минут, онлайн или в&nbsp;студии</p>
+        <button class="btn btn--primary" type="button" data-open-lead>Бесплатная консультация</button>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <h2>Всё, что вы хотели узнать о&nbsp;работе с&nbsp;нами</h2>
+        <div class="faq__list">
+          <details class="faq__item">
+            <summary>Работаете ли вы с&nbsp;объектами вне Москвы?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p>Да. Проектирование ведём дистанционно — это 90% наших проектов в&nbsp;регионах. Выезды на&nbsp;объект для обмера и&nbsp;авторского надзора согласуем отдельно: обычно это 1–2 поездки на&nbsp;весь проект.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Из чего складывается стоимость?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p>От&nbsp;площади, количества помещений и&nbsp;глубины проработки. Базовый пакет — от&nbsp;2&nbsp;900&nbsp;₽/м², полный под&nbsp;ключ — от&nbsp;4&nbsp;500&nbsp;₽/м². После брифа присылаем точный расчёт с&nbsp;разбивкой по&nbsp;этапам.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Сколько длится проект?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p>Дизайн-проект — 1–2&nbsp;месяца в&nbsp;зависимости от&nbsp;площади. Реализация квартиры — в&nbsp;среднем 3–4&nbsp;месяца, загородного дома — 5–7&nbsp;месяцев. Сроки фиксируем в&nbsp;договоре на&nbsp;каждом этапе.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Что будет, если мне не&nbsp;понравится дизайн-проект?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p>Планировку и&nbsp;визуализации согласовываем поэтапно: вы видите развитие концепции и&nbsp;вносите правки до&nbsp;того, как мы&nbsp;переходим к&nbsp;чертежам. Раундов правок в&nbsp;пакете — два на&nbsp;каждый этап.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Как строится коммуникация в&nbsp;процессе?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <p>Один менеджер проекта на&nbsp;связи 6&nbsp;дней в&nbsp;неделю. Еженедельный отчёт со&nbsp;статусом, закрытый чат с&nbsp;командой, ежемесячный созвон с&nbsp;руководителем студии. Все решения фиксируем письменно.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФИНАЛЬНАЯ ФОРМА -->
+    <section class="section">
+      <div class="container">
+        <div class="final__grid">
+          <div class="final__text">
+            <h2>Остались вопросы?</h2>
+            <p class="lead">Оставьте заявку — расскажем, как проходит работа, что входит в&nbsp;пакеты и&nbsp;сколько будет стоить ваш проект. Никакого спама: один звонок или сообщение в&nbsp;мессенджере.</p>
+            <form class="form form--compact" id="final-form" novalidate>
+              <label class="form__field">
+                <span class="form__label">Ваше имя</span>
+                <input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться" required>
+                <span class="form__error" aria-live="polite"></span>
+              </label>
+              <label class="form__field">
+                <span class="form__label">Телефон</span>
+                <input type="tel" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+                <span class="form__error" aria-live="polite"></span>
+              </label>
+              <button class="btn btn--primary" type="submit">Задать вопрос</button>
+            </form>
+          </div>
+          <img class="frame final__img" src="/assets/final.jpg" alt="Светлая прихожая в скандинавском стиле: скамья, зеркало и растения" width="1200" height="896" loading="lazy">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <a class="logo logo--footer" href="#top">NORDIKA</a>
+        <p>Студия скандинавских интерьеров. Проектируем светлые пространства для жизни с&nbsp;2014&nbsp;года.</p>
+      </div>
+      <nav class="footer__col" aria-label="Меню в подвале">
+        <a href="#about">О студии</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#team">Команда</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="footer__col">
+        <a href="tel:+74951204567">+7 (495) 120-45-67</a>
+        <a href="mailto:hello@nordika.design">hello@nordika.design</a>
+        <p>[ЗАПОЛНИТЬ: адрес студии]</p>
+      </div>
+      <div class="footer__col">
+        <a href="https://t.me/nordika_design" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://vk.com/nordika_design" target="_blank" rel="noopener">ВКонтакте</a>
+        <a href="https://www.pinterest.com/nordika_design/" target="_blank" rel="noopener">Pinterest</a>
+        <a href="/privacy.html">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__cta">
+        <button class="btn btn--primary" type="button" data-open-lead>Обсудить проект</button>
+        <p>© 2026 NORDIKA. Фотографии на&nbsp;странице — иллюстративные.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- МОДАЛКА: СПАСИБО -->
+  <div class="modal" id="thanks-modal" hidden>
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="thanks-title">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-close-modal></button>
+      <h3 id="thanks-title">Спасибо! Ваш запрос принят</h3>
+      <p class="modal__lead">Что произойдёт дальше:</p>
+      <ul class="checklist">
+        <li>Мы перезвоним в&nbsp;течение 1&nbsp;часа в&nbsp;рабочее время</li>
+        <li>Зададим несколько вопросов о&nbsp;вашем объекте</li>
+        <li>На&nbsp;следующий день пришлём предварительный расчёт</li>
+      </ul>
+      <p class="modal__note">Демонстрационный режим: данные никуда не&nbsp;отправляются.</p>
+      <a class="btn btn--primary" href="#portfolio" data-close-modal>Смотреть портфолио</a>
+    </div>
+  </div>
+
+  <!-- МОДАЛКА: КЕЙС -->
+  <div class="modal" id="project-modal" hidden>
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__panel modal__panel--wide" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-close-modal></button>
+      <div class="project-modal__grid">
+        <img class="frame" id="project-modal-img" src="/assets/proj-68.jpg" alt="" width="1200" height="896">
+        <div class="project-modal__info">
+          <h3 id="project-modal-title"></h3>
+          <dl class="case__facts" id="project-modal-facts"></dl>
+          <div id="project-modal-body"></div>
+          <button class="btn btn--primary" type="button" data-open-lead>Хочу так же</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- МОДАЛКА: ПАКЕТ -->
+  <div class="modal" id="package-modal" hidden>
+    <div class="modal__overlay" data-close-modal></div>
+    <div class="modal__panel modal__panel--wide" role="dialog" aria-modal="true" aria-labelledby="package-modal-title">
+      <button class="modal__close" type="button" aria-label="Закрыть" data-close-modal></button>
+      <h3 id="package-modal-title"></h3>
+      <p class="package-modal__lead" id="package-modal-lead"></p>
+      <div class="package-modal__columns" id="package-modal-body"></div>
+      <div class="package-modal__meta" id="package-modal-meta"></div>
+      <div class="package-modal__actions">
+        <button class="btn btn--primary" type="button" data-open-lead>Записаться на консультацию</button>
+        <button class="btn btn--secondary" type="button" data-open-lead>Задать вопрос&nbsp;→</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

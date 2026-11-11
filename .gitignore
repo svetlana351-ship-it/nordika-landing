@@ -1,0 +1,5 @@
+node_modules/
+vite*.log
+*.png
+*.jpg
+!assets/*.jpg

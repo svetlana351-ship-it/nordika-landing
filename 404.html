@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница не найдена — NORDIKA</title>
+  <meta name="description" content="Страница не найдена. Вернитесь на главную NORDIKA — студия скандинавских интерьеров.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .err { min-height: 70vh; display: flex; align-items: center; }
+    .err__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding: 80px 0; }
+    .err__num { font-family: var(--serif); font-size: 220px; line-height: 1; color: var(--accent); margin: 0; }
+    .err h1 { font-size: 45px; }
+    .err img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+    .err .btn { margin-top: 20px; }
+    @media (max-width: 720px) {
+      .err__inner { grid-template-columns: 1fr; gap: 40px; }
+      .err__num { font-size: 120px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="/" aria-label="NORDIKA — на главную">NORDIKA</a>
+      <nav class="nav" aria-label="Основное меню">
+        <a href="/#about">О студии</a>
+        <a href="/#services">Услуги</a>
+        <a href="/#portfolio">Портфолио</a>
+        <a href="/#team">Команда</a>
+        <a href="/#faq">FAQ</a>
+      </nav>
+      <div class="header__contacts">
+        <a class="header__phone" href="tel:+74951204567">+7 (495) 120-45-67</a>
+        <a class="btn btn--primary btn--header" href="/#lead">Консультация</a>
+      </div>
+      <button class="burger" type="button" aria-label="Меню" disabled><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="err">
+    <div class="container err__inner">
+      <div>
+        <p class="err__num">404</p>
+        <h1>Такой страницы нет — но&nbsp;есть сотни готовых интерьеров</h1>
+        <p>Ссылка устарела или адрес набран с&nbsp;ошибкой. Загляните в&nbsp;портфолио — там наши лучшие проекты.</p>
+        <a class="btn btn--primary" href="/#portfolio">Смотреть портфолио</a>
+      </div>
+      <img class="frame" src="/assets/review-3.jpg" alt="Светлая гостиная с растениями в скандинавском стиле" width="1024" height="768">
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__cta" style="grid-column: 1 / -1; border-top: none; padding-top: 0;">
+        <p>© 2026 NORDIKA. Фотографии на странице — иллюстративные.</p>
+        <a class="btn btn--secondary" href="/">На главную</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
