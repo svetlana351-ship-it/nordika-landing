@@ -123,12 +123,14 @@ if (burger && mobileMenu) {
     const open = mobileMenu.hidden;
     mobileMenu.hidden = !open;
     burger.setAttribute("aria-expanded", String(open));
+    document.body.classList.toggle("menu-open", open);
     document.body.style.overflow = open ? "hidden" : "";
   });
   $$("a, button", mobileMenu).forEach((el) =>
     el.addEventListener("click", () => {
       mobileMenu.hidden = true;
       burger.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("menu-open");
       document.body.style.overflow = "";
     })
   );

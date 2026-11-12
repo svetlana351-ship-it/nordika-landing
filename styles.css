@@ -97,6 +97,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   cursor: pointer;
   transition: background-color var(--transition), border-color var(--transition), color var(--transition);
   text-align: center;
+  white-space: nowrap;
 }
 .btn--primary { background: var(--accent); color: var(--surface); }
 .btn--primary:hover { background: var(--hover); color: var(--surface); }
@@ -352,7 +353,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   display: flex; align-items: center; justify-content: space-between; gap: 40px;
 }
 .section__cta p { font-family: var(--serif); font-size: 32px; color: var(--accent); margin: 0; }
+.section__cta--wide { margin-top: 40px; }
 .section__cta--wide .btn { min-width: 340px; }
+body.menu-open .header { z-index: 70; }
 
 /* ---------- Портфолио ---------- */
 .h-slider__viewport { overflow: hidden; }
@@ -571,8 +574,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   body { font-size: 16px; }
   .container { padding-left: 15px; padding-right: 15px; }
   h1 { font-size: 34px; }
-  h2 { font-size: 28px; margin-bottom: 24px; }
-  h3 { font-size: 24px; }
+  h2 { font-size: 34px; margin-bottom: 24px; }
+  h3 { font-size: 26px; }
   .lead { font-size: 18px; }
 
   .btn { width: 100%; min-height: 50px; padding: 10px 15px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.04em; }
@@ -604,10 +607,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .package-modal__actions { flex-direction: column; }
 
   .timeline { grid-template-columns: 1fr; row-gap: 40px; }
+  .timeline__step { display: grid; grid-template-columns: 70px 1fr; column-gap: 24px; padding-top: 0; align-items: start; }
+  .timeline__num { position: static; grid-row: 1 / 3; }
   .case__grid { grid-template-columns: 1fr; }
   .case__facts { grid-template-columns: 1fr 1fr; gap: 15px; }
   .section__cta { flex-direction: column; align-items: stretch; text-align: center; padding: 30px 20px; }
   .section__cta p { font-size: 24px; }
+  .section__cta--wide .btn { min-width: 0; }
 
   .form__row { grid-template-columns: 1fr; }
   .member, .member--rev { grid-template-columns: 1fr; gap: 24px; }
