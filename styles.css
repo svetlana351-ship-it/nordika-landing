@@ -607,7 +607,9 @@ body.menu-open .header { z-index: 70; }
   .btn--header { display: none; }
 
   .hero { height: 540px; }
-  .hero__plate { padding: 25px; }
+  .hero__content { min-width: 0; }
+  .hero__plate { padding: 25px; width: 100%; min-width: 0; }
+  .hero__plate h1, .hero__lead { overflow-wrap: break-word; }
   .hero__lead { font-size: 16px; }
   .hero__actions { gap: 16px; }
 
