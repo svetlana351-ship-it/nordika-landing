@@ -330,36 +330,47 @@
     <section class="section">
       <div class="container">
         <h2>Кейс месяца</h2>
-        <h3 class="case__title">Скандинавский интерьер, который дышит</h3>
+        <h3 class="case__title">Квартира 52&nbsp;м²: из&nbsp;тёмной «сталинки» — в&nbsp;светлый сканди</h3>
         <div class="case__grid">
           <figure class="case__photo">
-            <img class="frame" src="assets/case-before.jpg" alt="Комната квартиры до ремонта: пустая, с изношенными стенами" width="1200" height="896" loading="lazy">
+            <img class="frame" src="assets/case-before.jpg" alt="Тёмная комната старой квартиры до ремонта: тяжёлые шторы и старая мебель" width="1536" height="1024" loading="lazy">
             <figcaption>До</figcaption>
           </figure>
           <figure class="case__photo">
-            <img class="frame" src="assets/case-after.jpg" alt="Та же комната после ремонта: светлая отделка и уютная мебель" width="1200" height="896" loading="lazy">
+            <img class="frame" src="assets/case-after.jpg" alt="Та же комната после ремонта: светлые стены, дерево и много воздуха" width="1536" height="1024" loading="lazy">
             <figcaption>После</figcaption>
           </figure>
           <div class="case__info">
             <dl class="case__facts">
-              <div><dt>Площадь</dt><dd>68&nbsp;м²</dd></div>
-              <div><dt>Срок</dt><dd>4&nbsp;месяца</dd></div>
-              <div><dt>Бюджет</dt><dd>4 800 000&nbsp;₽</dd></div>
-              <div><dt>Стиль</dt><dd>Современный,<br>светлые тона</dd></div>
+              <div><dt>Площадь</dt><dd>52&nbsp;м²</dd></div>
+              <div><dt>Срок</dt><dd>2,5&nbsp;месяца</dd></div>
+              <div><dt>Бюджет</dt><dd>580&nbsp;000&nbsp;₽</dd></div>
+              <div><dt>Стиль</dt><dd>Скандинавский</dd></div>
             </dl>
             <div class="case__block">
-              <h4>Задача</h4>
-              <p>Создать светлое пространство с&nbsp;большой кухней-гостиной, изолированной детской и&nbsp;вместительным хранением без&nbsp;перепланировки.</p>
+              <h4>Было</h4>
+              <p>Тёмные углы, тяжёлые портьеры и&nbsp;мебель ещё советской эпохи: света в&nbsp;комнатах почти не&nbsp;было, а&nbsp;каждый метр работал против хозяев.</p>
             </div>
             <div class="case__block">
-              <h4>Решение</h4>
-              <p>Объединили кухню и&nbsp;гостиную, перенесли зону ТВ для&nbsp;лучшего освещения, спроектировали встроенные шкафы до&nbsp;потолка.</p>
+              <h4>Стало</h4>
+              <p>Светлая палитра, дерево и&nbsp;воздух: убрали лишнюю перегородку, освободили 8&nbsp;м² и&nbsp;сделали окно главным источником света.</p>
             </div>
-            <div class="case__block case__block--result">
-              <h4>Результат</h4>
-              <p>+10&nbsp;м² полезного хранения, заказчик получил понятную документацию для&nbsp;строителей, количество правок сократилось на&nbsp;30%.</p>
+            <div class="case__works">
+              <h4>Что было сделано</h4>
+              <ul class="checklist">
+                <li>Демонтаж перегородки между кухней и&nbsp;комнатой</li>
+                <li>Выравнивание стен, пола и&nbsp;потолков</li>
+                <li>Замена электрики и&nbsp;световые сценарии для&nbsp;каждой зоны</li>
+                <li>Светлая отделка: краска, инженерная доска, плитка под&nbsp;камень</li>
+                <li>Встроенные шкафы и&nbsp;хранение до&nbsp;потолка</li>
+                <li>Подбор мебели, текстиля и&nbsp;декора под&nbsp;ключ</li>
+              </ul>
             </div>
           </div>
+        </div>
+        <div class="section__cta section__cta--wide">
+          <p>Хотите такую же трансформацию? Обсудим вашу квартиру.</p>
+          <button class="btn btn--primary" type="button" data-open-lead>Записаться на консультацию</button>
         </div>
       </div>
     </section>
@@ -439,15 +450,26 @@
               </select>
               <span class="form__error" aria-live="polite"></span>
             </label>
+            <div class="form__field">
+              <span class="form__label">Какие помещения нужно спроектировать?</span>
+              <div class="form__checks">
+                <label class="check"><input type="checkbox" name="rooms" value="Кухня-гостиная"><span>Кухня-гостиная</span></label>
+                <label class="check"><input type="checkbox" name="rooms" value="Спальня"><span>Спальня</span></label>
+                <label class="check"><input type="checkbox" name="rooms" value="Детская"><span>Детская</span></label>
+                <label class="check"><input type="checkbox" name="rooms" value="Ванная"><span>Ванная</span></label>
+                <label class="check"><input type="checkbox" name="rooms" value="Прихожая"><span>Прихожая</span></label>
+                <label class="check"><input type="checkbox" name="rooms" value="Кабинет"><span>Кабинет</span></label>
+              </div>
+            </div>
             <label class="form__field">
               <span class="form__label">Комментарий <span class="form__opt">(не&nbsp;обязательно)</span></span>
               <textarea name="comment" rows="3" placeholder="Площадь, пожелания, сроки"></textarea>
             </label>
-            <button class="btn btn--primary form__submit" type="submit">Получить расчёт</button>
-            <p class="form__note">Перезвоним за&nbsp;1&nbsp;час в&nbsp;рабочее время. Демонстрационный режим: данные формы никуда не&nbsp;отправляются.</p>
+            <button class="btn btn--primary form__submit" type="submit">Заказать расчёт</button>
+            <p class="form__note">Перезвоним за&nbsp;1&nbsp;час в&nbsp;рабочее время с&nbsp;8:00 до&nbsp;19:00. Демонстрационный режим: данные формы никуда не&nbsp;отправляются.</p>
           </form>
           <aside class="lead__aside">
-            <h3>Что вы получите уже на&nbsp;этапе заявки</h3>
+            <h3>Уже на&nbsp;этапе заявки</h3>
             <ul class="checklist">
               <li>Предварительную смету под&nbsp;ваш метраж</li>
               <li>Рекомендации по&nbsp;планировке</li>
