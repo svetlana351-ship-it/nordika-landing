@@ -278,18 +278,7 @@ $$("[data-slider]").forEach((slider) => {
   const next = $(".h-slider__arrow--next", slider);
   const dotsBox = $(".h-slider__dots", slider);
   let index = 0;
-
-  if (dotsBox && !dotsBox.hidden) {
-    cards.forEach((_, i) => {
-      const dot = document.createElement("button");
-      dot.type = "button";
-      dot.className = "h-slider__dot" + (i === 0 ? " is-active" : "");
-      dot.setAttribute("aria-label", `Слайд ${i + 1}`);
-      dot.addEventListener("click", () => goTo(i));
-      dotsBox.appendChild(dot);
-    });
-  }
-  const dots = dotsBox ? $$(".h-slider__dot", slider) : [];
+  let dots = [];
 
   function trackWidth() {
     const gap = parseFloat(getComputedStyle(track).gap) || 0;
@@ -299,21 +288,47 @@ $$("[data-slider]").forEach((slider) => {
     const viewport = $(".h-slider__viewport", slider);
     return Math.max(0, trackWidth() - viewport.clientWidth);
   }
+  function step() {
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    return cards[0].getBoundingClientRect().width + gap;
+  }
+  /* число реально достижимых позиций: на десктопе часть карточек видна сразу,
+     поэтому позиций меньше, чем карточек; на мобилке (карточка = 100%) — равно числу карточек */
+  function maxIndex() {
+    return Math.max(0, Math.min(cards.length - 1, Math.ceil(maxOffset() / step())));
+  }
+
+  function buildDots() {
+    dots = [];
+    if (!dotsBox || dotsBox.hidden || maxIndex() === 0) {
+      if (dotsBox) dotsBox.innerHTML = "";
+      return;
+    }
+    dotsBox.innerHTML = "";
+    for (let i = 0; i <= maxIndex(); i++) {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "h-slider__dot" + (i === index ? " is-active" : "");
+      dot.setAttribute("aria-label", `Слайд ${i + 1}`);
+      dot.addEventListener("click", () => goTo(i));
+      dotsBox.appendChild(dot);
+      dots.push(dot);
+    }
+  }
 
   function goTo(i) {
-    index = Math.max(0, Math.min(i, cards.length - 1));
-    const gap = parseFloat(getComputedStyle(track).gap) || 0;
-    const step = cards[0].getBoundingClientRect().width + gap;
+    index = Math.max(0, Math.min(i, maxIndex()));
     const max = maxOffset();
-    const offset = Math.min(index * step, max);
+    const offset = Math.min(index * step(), max);
     track.style.transform = `translateX(${-offset}px)`;
-    if (dots.length) dots.forEach((d, j) => d.classList.toggle("is-active", j === index));
+    dots.forEach((d, j) => d.classList.toggle("is-active", j === index));
     if (prev) prev.disabled = index === 0;
-    if (next) next.disabled = index * step >= max;
+    if (next) next.disabled = index >= maxIndex();
   }
   if (prev) prev.addEventListener("click", () => goTo(index - 1));
   if (next) next.addEventListener("click", () => goTo(index + 1));
-  window.addEventListener("resize", () => goTo(index));
+  window.addEventListener("resize", () => { buildDots(); goTo(index); });
+  buildDots();
   goTo(0);
 });
 
