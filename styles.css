@@ -439,6 +439,11 @@ body.menu-open .header { z-index: 70; }
 .form__field.is-invalid input, .form__field.is-invalid select { border-color: #8A2E2E; }
 .form__submit { justify-self: stretch; width: 100%; }
 .form__note { font-size: 14px; color: var(--muted); margin: 0; }
+.form__consent { gap: 4px; }
+.form__consent-label { display: flex; align-items: center; gap: 10px; font-size: 14px; color: var(--muted); cursor: pointer; }
+.form__consent-label input { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); cursor: pointer; flex: none; }
+.form__consent-label a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.form__consent-label a:hover { color: var(--hover); }
 .form__checks { display: flex; flex-wrap: wrap; gap: 12px; }
 .check {
   position: relative;

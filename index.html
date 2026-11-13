@@ -317,7 +317,7 @@
             <button class="h-slider__arrow h-slider__arrow--prev" type="button" aria-label="Предыдущий проект">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
             </button>
-            <div class="h-slider__dots" role="tablist" aria-label="Проекты"></div>
+            <div class="h-slider__dots" role="tablist" aria-label="Проекты" hidden></div>
             <button class="h-slider__arrow h-slider__arrow--next" type="button" aria-label="Следующий проект">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
             </button>
@@ -409,7 +409,7 @@
             <button class="h-slider__arrow h-slider__arrow--prev" type="button" aria-label="Предыдущий отзыв">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
             </button>
-            <div class="h-slider__dots" role="tablist" aria-label="Отзывы"></div>
+            <div class="h-slider__dots" role="tablist" aria-label="Отзывы" hidden></div>
             <button class="h-slider__arrow h-slider__arrow--next" type="button" aria-label="Следующий отзыв">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
             </button>
@@ -465,11 +465,18 @@
               <span class="form__label">Комментарий <span class="form__opt">(не&nbsp;обязательно)</span></span>
               <textarea name="comment" rows="3" placeholder="Площадь, пожелания, сроки"></textarea>
             </label>
+            <div class="form__field form__consent">
+              <label class="form__consent-label">
+                <input type="checkbox" name="consent" required>
+                <span>Соглашаюсь на&nbsp;обработку <a href="privacy.html" target="_blank" rel="noopener">персональных данных</a></span>
+              </label>
+              <span class="form__error" aria-live="polite"></span>
+            </div>
             <button class="btn btn--primary form__submit" type="submit">Заказать расчёт</button>
-            <p class="form__note">Перезвоним за&nbsp;1&nbsp;час в&nbsp;рабочее время с&nbsp;8:00 до&nbsp;19:00. Демонстрационный режим: данные формы никуда не&nbsp;отправляются.</p>
+            <p class="form__note">Перезвоним в&nbsp;течение часа. Демонстрационный режим: данные формы никуда не&nbsp;отправляются.</p>
           </form>
           <aside class="lead__aside">
-            <h3>Уже на&nbsp;этапе заявки</h3>
+            <h3>Уже на&nbsp;этапе заявки вы&nbsp;получите:</h3>
             <ul class="checklist">
               <li>Предварительную смету под&nbsp;ваш метраж</li>
               <li>Рекомендации по&nbsp;планировке</li>

@@ -268,22 +268,24 @@ $$("[data-slider]").forEach((slider) => {
   const dotsBox = $(".h-slider__dots", slider);
   let index = 0;
 
-  cards.forEach((_, i) => {
-    const dot = document.createElement("button");
-    dot.type = "button";
-    dot.className = "h-slider__dot" + (i === 0 ? " is-active" : "");
-    dot.setAttribute("aria-label", `Слайд ${i + 1}`);
-    dot.addEventListener("click", () => goTo(i));
-    dotsBox.appendChild(dot);
-  });
-  const dots = $$(".h-slider__dot", slider);
+  if (dotsBox && !dotsBox.hidden) {
+    cards.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "h-slider__dot" + (i === 0 ? " is-active" : "");
+      dot.setAttribute("aria-label", `Слайд ${i + 1}`);
+      dot.addEventListener("click", () => goTo(i));
+      dotsBox.appendChild(dot);
+    });
+  }
+  const dots = dotsBox ? $$(".h-slider__dot", slider) : [];
 
   function goTo(i) {
     index = Math.max(0, Math.min(i, cards.length - 1));
     const gap = parseFloat(getComputedStyle(track).gap) || 0;
     const offset = index * (cards[0].getBoundingClientRect().width + gap);
     track.style.transform = `translateX(${-offset}px)`;
-    dots.forEach((d, j) => d.classList.toggle("is-active", j === index));
+    if (dots.length) dots.forEach((d, j) => d.classList.toggle("is-active", j === index));
     if (prev) prev.disabled = index === 0;
     if (next) next.disabled = index === cards.length - 1;
   }
@@ -301,9 +303,13 @@ function validateField(field) {
   if (!input || !input.required) return true;
   const err = $(".form__error", field);
   let msg = "";
-  const value = input.value.trim();
-  if (!value) msg = input.tagName === "SELECT" ? "Выберите вариант" : "Заполните поле";
-  else if (input.type === "tel" && !PHONE_RE.test(value)) msg = "Неправильно введён телефон";
+  if (input.type === "checkbox") {
+    if (!input.checked) msg = "Подтвердите согласие на обработку данных";
+  } else {
+    const value = input.value.trim();
+    if (!value) msg = input.tagName === "SELECT" ? "Выберите вариант" : "Заполните поле";
+    else if (input.type === "tel" && !PHONE_RE.test(value)) msg = "Неправильно введён телефон";
+  }
   field.classList.toggle("is-invalid", Boolean(msg));
   if (err) err.textContent = msg;
   return !msg;
