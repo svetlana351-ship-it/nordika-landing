@@ -244,14 +244,25 @@ $$("[data-open-package]").forEach((btn) =>
   });
   const dots = $$(".packages-slider__dot", slider);
 
+  function trackWidth() {
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    return cards.reduce((w, c) => w + c.getBoundingClientRect().width, 0) + gap * (cards.length - 1);
+  }
+  function maxOffset() {
+    const viewport = $(".packages-slider__viewport", slider);
+    return Math.max(0, trackWidth() - viewport.clientWidth);
+  }
+
   function goTo(i) {
     index = Math.max(0, Math.min(i, cards.length - 1));
     const gap = parseFloat(getComputedStyle(track).gap) || 0;
-    const offset = index * (cards[0].getBoundingClientRect().width + gap);
+    const step = cards[0].getBoundingClientRect().width + gap;
+    const max = maxOffset();
+    const offset = Math.min(index * step, max);
     track.style.transform = `translateX(${-offset}px)`;
     dots.forEach((d, j) => d.classList.toggle("is-active", j === index));
     if (prev) prev.disabled = index === 0;
-    if (next) next.disabled = index === cards.length - 1;
+    if (next) next.disabled = index * step >= max;
   }
   if (prev) prev.addEventListener("click", () => goTo(index - 1));
   if (next) next.addEventListener("click", () => goTo(index + 1));
@@ -280,14 +291,25 @@ $$("[data-slider]").forEach((slider) => {
   }
   const dots = dotsBox ? $$(".h-slider__dot", slider) : [];
 
+  function trackWidth() {
+    const gap = parseFloat(getComputedStyle(track).gap) || 0;
+    return cards.reduce((w, c) => w + c.getBoundingClientRect().width, 0) + gap * (cards.length - 1);
+  }
+  function maxOffset() {
+    const viewport = $(".h-slider__viewport", slider);
+    return Math.max(0, trackWidth() - viewport.clientWidth);
+  }
+
   function goTo(i) {
     index = Math.max(0, Math.min(i, cards.length - 1));
     const gap = parseFloat(getComputedStyle(track).gap) || 0;
-    const offset = index * (cards[0].getBoundingClientRect().width + gap);
+    const step = cards[0].getBoundingClientRect().width + gap;
+    const max = maxOffset();
+    const offset = Math.min(index * step, max);
     track.style.transform = `translateX(${-offset}px)`;
     if (dots.length) dots.forEach((d, j) => d.classList.toggle("is-active", j === index));
     if (prev) prev.disabled = index === 0;
-    if (next) next.disabled = index === cards.length - 1;
+    if (next) next.disabled = index * step >= max;
   }
   if (prev) prev.addEventListener("click", () => goTo(index - 1));
   if (next) next.addEventListener("click", () => goTo(index + 1));
